@@ -6713,7 +6713,7 @@ to{-webkit-transform:rotate(1turn);transform:rotate(1turn)
 .p-table-header th:last-child{border-radius:0 5px 5px 0;padding-right:10px
 }
 
-.carousel-3d-container {
+.carousel-3d-container[data-v-c06c963c] {
     min-height: 1px;
     width: 100%;
     position: relative;
