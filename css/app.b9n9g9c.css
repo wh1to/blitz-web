@@ -6713,7 +6713,14 @@ to{-webkit-transform:rotate(1turn);transform:rotate(1turn)
 .p-table-header th:last-child{border-radius:0 5px 5px 0;padding-right:10px
 }
 
-.carousel-3d-container{margin:48px 0!important
+.carousel-3d-container {
+    min-height: 1px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    margin: 20px auto;
+    box-sizing: border-box;
 }
 
 .streams-clock_button{border:none;padding:0;margin:0;background:none;text-align:left
