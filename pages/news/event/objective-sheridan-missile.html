@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Цель: Sheridan Ракетный | Project Blitz</title>
+    <meta name="title" content="World of Tanks Blitz: танковая MMO-игра">
+    <meta name="description" content="Легендарный танковый шутер. Сражайся в командных боях 7 на 7 в одиночку или с друзьями, исследуй и улучшай бронетехнику, пробуй разные тактики и побеждай. Выбери танк и отправляйся в бой!">
+    <meta property="og:image" content="https://static-wbp-eu.wgcdn.co/newstatic/images/logo.png">
+    <meta property="og:title" content="Цель: Sheridan Ракетный | Project Blitz">
+    <meta property="og:description" content="Легендарный танковый шутер. Сражайся в командных боях 7 на 7 в одиночку или с друзьями.">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" type="image/x-icon" href="https://static-wbp-eu.wgcdn.co/newstatic/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://static-wbp-eu.wgcdn.co/newstatic/app.5cac50.css">
+    <style>
+        #common_menu .cm-layout_content {
+            color: #525454;
+            font-family: Arial, "Helvetica CY", Helvetica, sans-serif;
+            font-size: 13px;
+            height: 37px;
+            margin: auto;
+            padding: 0 10px;
+            z-index: 100;
+        }
+
+        #common_menu .cm-singletons_ico-holder img, #common_menu .cm-singletons_ico-holder svg {
+            display: block;
+            margin: 0 auto;
+        }
+
+        #common_menu .cm-singletons_ico-wrapper__main {
+            height: 37px;
+            line-height: 37px;
+        }
+
+        #common_menu .cm-singletons_ico-wrapper {
+            display: inline-block;
+            text-align: left;
+            opacity: 1;
+            top: 0;
+            margin-right: -5px;
+            position: relative;
+        }
+
+        #common_menu .cm-singletons_ico-wrapper {
+            -webkit-transition: opacity ease 0.1s;
+            transition: opacity ease 0.1s;
+            top: -1px;
+            left: 0;
+            width: 25px;
+            height: 32px;
+            line-height: 32px;
+            position: absolute;
+            text-align: center;
+        }
+
+        #common_menu .cm-singletons_ico-holder__logo {
+            width: 19px;
+            height: 19px;
+            line-height: 19px;
+            vertical-align: middle;
+            margin-top: -2px;
+        }
+
+        #common_menu img {
+            border: none;
+        }
+
+
+        #common_menu * {
+            box-sizing: content-box;
+            color: inherit;
+            float: none;
+            font: normal;
+            font-family: inherit;
+            font-size: inherit;
+            font-style: inherit;
+            font-variant: inherit;
+            font-weight: inherit;
+            height: auto;
+            left: auto;
+            letter-spacing: normal;
+            line-height: inherit;
+            list-style: none;
+            list-style-image: none;
+            list-style-position: outside;
+            list-style-type: disc;
+            margin: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
+            max-height: none;
+            max-width: none;
+            min-height: 0;
+            min-width: 0;
+            opacity: 1;
+            orphans: 0;
+            outline: 0;
+            outline-color: invert;
+            outline-style: none;
+            outline-width: medium;
+            overflow: visible;
+            overflow-x: visible;
+            overflow-y: visible;
+            padding: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 0;
+            position: static;
+            right: auto;
+            table-layout: auto;
+            text-align: inherit;
+            text-align-last: auto;
+            text-decoration: none;
+            text-decoration-color: inherit;
+            text-decoration-line: none;
+            text-decoration-style: solid;
+            text-indent: 0;
+            text-shadow: none;
+            text-transform: none;
+            top: auto;
+            vertical-align: baseline;
+            visibility: visible;
+            white-space: normal;
+            word-spacing: normal;
+        }
+
+        #common_menu .cm-showcase_opener {
+            display: inline-block;
+            font-size: 13px;
+            letter-spacing: normal;
+            line-height: normal;
+            word-spacing: normal;
+            filter: alpha(opacity=60);
+            opacity: 0.6;
+            color: #fff;
+            font-size: 13px;
+            line-height: 37px;
+            padding: 0 8px 0 9px;
+            position: relative;
+            white-space: nowrap;
+            vertical-align: top;
+            cursor: pointer;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            -webkit-backface-visibility: hidden;
+            z-index: 101;
+        }
+
+        a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+        }
+
+        #common_menu .cm-browsers-alert_link, #common_menu .cm-footer-logout_link, #common_menu .cm-showcase_opener, #common_menu .cm-text-link, #common_menu .cm-user-link, #common_menu .cm-clan-link, #common_menu .cm-nav-link, #common_menu .cm-link {
+            -webkit-transition: color ease 0.1s, text-shadow ease 0.1s;
+            transition: color ease 0.1s, text-shadow ease 0.1s;
+            color: #707273;
+            display: inline-block;
+            position: relative;
+            text-decoration: none;
+            line-height: inherit;
+            font-size: inherit;
+        }
+
+        #common_menu .cm-layout_content {
+            color: #525454;
+            font-family: Arial, "Helvetica CY", Helvetica, sans-serif;
+            font-size: 13px;
+            height: 37px;
+            margin: auto;
+            padding: 0 10px;
+            z-index: 100;
+        }
+
+        #common_menu .cm-layout {
+            background: #050f14;
+            position: relative;
+            -webkit-text-size-adjust: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        #common_menu *:before, #common_menu *:after {
+            box-sizing: content-box;
+        }
+
+        #common_menu *:before, #common_menu *:after {
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body class="page">
+    <div id="app" class="page_body">
+        <div class="page_content">
+            <div>
+                <div id="common_menu" class="common-menu">
+                    <div class="cm-layout js-cm-layout cm-not-touch" data-nosnippet="">
+                        <div class="cm-layout_content js-cm-layout-content">
+                            <div class="cm-menu cm-menu__user cm-menu__user-unauthorized js-cm-menu__user">
+                                <div class="js-cm-login-spinner">
+                                </div>
+                                <a href="#" class="cm-user-menu-link cm-user-menu-link__unauthorised js-cm-dropdown-link js-cm-event js-cm-user-menu-link" data-tooltip-text="tooltip_user_menu" data-cm-event="toggle_user_menu" data-active-class="cm-user-menu-link__unauthorised-opened">
+                                </a>
+                                <div class="cm-user-unauthorized js-cm-dropdown" data-active-class="cm-user-unauthorized__opened">
+                                    <h1 class="cm-menu-heading js-menu-heading"></h1>
+                                    <ul>
+                                        <li class="cm-user-unauthorized_item">
+                                            <a href="javascript:void(0)" class="cm-nav-link js-cm-event js-cm-login-link js-cm-link-ignore-target" data-cm-event="login">
+                                                <span class="cm-nav-link_text">
+                                                    <span class="js-cm-login-spinner-mobile">
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="cm-up cm-up__bordered">
+                                        <a class="cm-up_link js-cm-up_link" href="#">
+                                            <span class="cm-up_arrow"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="cm-singletons cm-singletons__main cm-singletons__logo" href="http://eu.wargaming.net/?utm_content=wg-icon&amp;utm_source=global-nav&amp;utm_medium=link&amp;utm_campaign=wotb-portal">
+                            </a>
+                            <div class="cm-showcase js-cm-li-ptl">
+                                <div class="cm-showcase_dropdown js-cm-dropdown js-cm-games-dropdown" data-active-class="cm-showcase_dropdown__opened" data-dropdown="games">
+                                    <div class="cm-showcase-nav">
+                                        <a href="#" class="cm-showcase-nav_link cm-showcase-nav_link__left js-carousel-left">
+                                            <span class="cm-showcase-nav_ico-wrapper">
+                                            </span>
+                                            <span class="cm-showcase-nav_ico cm-showcase-nav_ico__left">
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cm-title js-cm-hint-container"></div>
+                </div>
+                
+                <script type="text/javascript" src="https://cdn-cm.wgcdn.co/loader.min.js" class="optanon-category-C0002 "></script>
+            </div>
+            </div>
+            <nav class="nav-bar">
+                <div class="nav-bar_content">
+                    <a href="../../../index.html" class="portal-logo nav-bar_portal-logo"></a>
+                    <ul class="navigation">
+                        <li class="navigation_item navigation_item__hide-desktop"></li>
+                        <li class="navigation_item"><a href="../../../index.html" class="navigation_link"><span>Главная</span></a></li>
+                        <li class="navigation_item"><a href="../../forbidden_ru.html" class="navigation_link"><span>Лента</span></a></li>
+                        <li class="navigation_item"><a href="../../forbidden_ru.html" class="navigation_link"><span>Турниры</span></a></li>
+                        <li class="navigation_item"><a href="../archive_content.html" target="_blank" class="navigation_link"><span>Помоги нам!</span></a></li>
+                        <li class="navigation_item"><a class="button-play navigation_button-play"><span>ИГРАТЬ</span></a></li>
+                    </ul>
+                    <div class="nav-bar_item">
+                    </div>
+                </div>
+            </nav>
+
+            <div></div>
+
+            <main class="news-page">
+                <div>
+                    <div class="news-page_item">
+                        <article data-slug="objective-sheridan-missile" class="news">
+                            <div class="news_body">
+                                <div class="bread-crumbs">
+                                    <a href="../../../index.html" class="bread-crumbs_link"><span>Главная</span></a>
+                                    <a href="/ru/news/" class="bread-crumbs_link"><span>Лента</span></a>
+                                    <a href="/ru/news/#/updates" class="bread-crumbs_link">Обновления</a>
+                                </div>
+                                <h1 class="news_heading">Цель: Sheridan Ракетный</h1>
+                                <p class="news_time">
+                                    <span id="dynamic-time" data-original-date="05.06.26 00:00"></span>
+                                </p>
+                                <div class="news_banner"></div>
+                                <div class="news_content">
+                                    <div>
+                                        <div>
+                                            <p>— Мы в открытом космосе! Какой ваш приказ, командир?</p>
+                                            <p>— Побеждать!</p>
+                                            <p>Врывайся в бой на первой космической скорости и собирай
+                                                <span style="white-space: nowrap;">
+                                                    <img src="https://previews.dropbox.com/p/thumb/ADAKAS9EF7kXyQuai3-1CYQp3Jw_pNIr1vCGCrC9GBEUgYcjVRPA2J0RVtPzy9fgkQ1Q4SxWRYJaSzcbmIQR8UXBviPMyB3oYM3Dkw86yKYCEqB_SDCS91EB-94-9KnJ7RxiHNPcX_ouxcoHSNazzzknKqXw-FqaeAKL2GpBMmvEtcOTGU-2372G3HBv9qafx1-6J-tJV4l1tdN0C_IbpUz0eJip4QPiysR5RP-ssyXhXjrf1lqZwUoNwhc_lmrdECzmzkpbpgQxPGQ7fkWArn5a8SqMmngSDuYrSuFiPpaROQNgllw3efXXdB209q2mEtej_gK4bOkq8j4j9N8_0Ud9/p.png?is_prewarmed=true" style="float: none; width: 25px; vertical-align: middle;"> Ракеты.
+                                                </span>
+                                            </p>
+                                            <p>Прояви неземной уровень мастерства, дойди до последнего этапа и забери легендарный
+                                                <span class="tanks-info tanks-info__collection">
+                                                    <span class="tanks-info_flag tanks-info_flag__usa"></span>
+                                                    <span class="tanks-info_type tanks-info_type__lighttank"></span>
+                                                    <span class="tanks-info_level">X</span>
+                                                    XM551 Sheridan Ракетный
+                                                </span>
+                                                или
+                                                <span style="white-space: nowrap;">
+                                                    <img src="https://previews.dropbox.com/p/thumb/ADD2Nk5DWnxJshyPx18U0U6ZHd2__ObbrSkMmQrzMIAiyRcJPjujU7hYLev8e0UVmqrqQlIxmhBnkGt087AYf9HQ1JTo597esoEF88x1PFilUkg6yiOFU55OVFXOXo9D4bZSwLYaD2Ne0VYIBmNfEAH5idVUW9SLfVh-z6m48gFm4nSOweGhoVJsUiKL87KPrNZD5gj9PFkwvZObaP7iDlmswHi267uCrUs92pRKI4LwKVfhW74anUszJEKkGBi4gvhNR7jO6SDaGC4zuQg9lHPq60YwoQQmgoXdzBsqTGcfQNrukGTstlC_mAeb2tQ1EQ7Epf7SXIT0C9IE2Ddeh7kr/p.png?is_prewarmed=true" style="float: none; width: 25px; vertical-align: middle;"> контейнер
+                                                </span>
+                                                «Мощный»!
+                                            </p>
+
+                                            <div style="text-align: center;">
+                                                <div data-v-c06c963c="" class="carousel-3d-container" style="height: 310px;">
+                                                    <div data-v-c06c963c="" class="carousel-3d-slider" style="width: 550px; height: 310px;">
+                                                        <div class="carousel-3d-slide current" data-v-c06c963c="" style="border-width: 0px; width: 550px; height: 310px; transition: transform 500ms, opacity 500ms, visibility 500ms;">
+                                                            <div style="background-size: cover; background-image: url('https://media-wbp.wgcdn.co/media/filer_public/images/1.Sheridan_Missile_RU.jpg'); height: 100%; width: 100%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <h3>А теперь подробнее!</h3>
+
+                                            <details>
+                                                <summary>Как забрать все награды?</summary>
+                                                <div>
+                                                    <p>Всё просто: побеждай в боях!</p>
+                                                    <p>Каждая победа в обычных и рейтинговых боях принесёт тебе
+                                                        <span style="white-space: nowrap;">
+                                                            <img src="https://previews.dropbox.com/p/thumb/ADAKAS9EF7kXyQuai3-1CYQp3Jw_pNIr1vCGCrC9GBEUgYcjVRPA2J0RVtPzy9fgkQ1Q4SxWRYJaSzcbmIQR8UXBviPMyB3oYM3Dkw86yKYCEqB_SDCS91EB-94-9KnJ7RxiHNPcX_ouxcoHSNazzzknKqXw-FqaeAKL2GpBMmvEtcOTGU-2372G3HBv9qafx1-6J-tJV4l1tdN0C_IbpUz0eJip4QPiysR5RP-ssyXhXjrf1lqZwUoNwhc_lmrdECzmzkpbpgQxPGQ7fkWArn5a8SqMmngSDuYrSuFiPpaROQNgllw3efXXdB209q2mEtej_gK4bOkq8j4j9N8_0Ud9/p.png?is_prewarmed=true" style="float: none; width: 25px; vertical-align: middle;"> 2 Ракеты
+                                                        </span>,
+                                                        в фановых режимах —
+                                                        <span style="white-space: nowrap;">
+                                                            <img src="https://previews.dropbox.com/p/thumb/ADAKAS9EF7kXyQuai3-1CYQp3Jw_pNIr1vCGCrC9GBEUgYcjVRPA2J0RVtPzy9fgkQ1Q4SxWRYJaSzcbmIQR8UXBviPMyB3oYM3Dkw86yKYCEqB_SDCS91EB-94-9KnJ7RxiHNPcX_ouxcoHSNazzzknKqXw-FqaeAKL2GpBMmvEtcOTGU-2372G3HBv9qafx1-6J-tJV4l1tdN0C_IbpUz0eJip4QPiysR5RP-ssyXhXjrf1lqZwUoNwhc_lmrdECzmzkpbpgQxPGQ7fkWArn5a8SqMmngSDuYrSuFiPpaROQNgllw3efXXdB209q2mEtej_gK4bOkq8j4j9N8_0Ud9/p.png?is_prewarmed=true" style="float: none; width: 25px; vertical-align: middle;"> 3 Ракеты
+                                                        </span>,
+                                                        а в фановых режимах на Sheridan Ракетном —
+                                                        <span style="white-space: nowrap;">
+                                                            <img src="https://previews.dropbox.com/p/thumb/ADAKAS9EF7kXyQuai3-1CYQp3Jw_pNIr1vCGCrC9GBEUgYcjVRPA2J0RVtPzy9fgkQ1Q4SxWRYJaSzcbmIQR8UXBviPMyB3oYM3Dkw86yKYCEqB_SDCS91EB-94-9KnJ7RxiHNPcX_ouxcoHSNazzzknKqXw-FqaeAKL2GpBMmvEtcOTGU-2372G3HBv9qafx1-6J-tJV4l1tdN0C_IbpUz0eJip4QPiysR5RP-ssyXhXjrf1lqZwUoNwhc_lmrdECzmzkpbpgQxPGQ7fkWArn5a8SqMmngSDuYrSuFiPpaROQNgllw3efXXdB209q2mEtej_gK4bOkq8j4j9N8_0Ud9/p.png?is_prewarmed=true" style="float: none; width: 25px; vertical-align: middle;"> 4 Ракеты
+                                                        </span>.
+                                                        Обменивай их на призы на экране события!
+                                                    </p>
+                                                </div>
+                                            </details>
+
+                                            <details>
+                                                <summary>Сколько опыта нужно заработать, чтобы получить
+                                                    <span style="white-space: nowrap;">
+                                                        <img src="https://previews.dropbox.com/p/thumb/ADAKAS9EF7kXyQuai3-1CYQp3Jw_pNIr1vCGCrC9GBEUgYcjVRPA2J0RVtPzy9fgkQ1Q4SxWRYJaSzcbmIQR8UXBviPMyB3oYM3Dkw86yKYCEqB_SDCS91EB-94-9KnJ7RxiHNPcX_ouxcoHSNazzzknKqXw-FqaeAKL2GpBMmvEtcOTGU-2372G3HBv9qafx1-6J-tJV4l1tdN0C_IbpUz0eJip4QPiysR5RP-ssyXhXjrf1lqZwUoNwhc_lmrdECzmzkpbpgQxPGQ7fkWArn5a8SqMmngSDuYrSuFiPpaROQNgllw3efXXdB209q2mEtej_gK4bOkq8j4j9N8_0Ud9/p.png?is_prewarmed=true" style="float: none; width: 25px; vertical-align: middle;"> Ракеты?
+                                                    </span>
+                                                </summary>
+                                                <div>
+                                                    <p>
+                                                        <span style="white-space: nowrap;">
+                                                            <img src="https://previews.dropbox.com/p/thumb/ADAKAS9EF7kXyQuai3-1CYQp3Jw_pNIr1vCGCrC9GBEUgYcjVRPA2J0RVtPzy9fgkQ1Q4SxWRYJaSzcbmIQR8UXBviPMyB3oYM3Dkw86yKYCEqB_SDCS91EB-94-9KnJ7RxiHNPcX_ouxcoHSNazzzknKqXw-FqaeAKL2GpBMmvEtcOTGU-2372G3HBv9qafx1-6J-tJV4l1tdN0C_IbpUz0eJip4QPiysR5RP-ssyXhXjrf1lqZwUoNwhc_lmrdECzmzkpbpgQxPGQ7fkWArn5a8SqMmngSDuYrSuFiPpaROQNgllw3efXXdB209q2mEtej_gK4bOkq8j4j9N8_0Ud9/p.png?is_prewarmed=true" style="float: none; width: 25px; vertical-align: middle;"> Ракеты
+                                                        </span>
+                                                        не начисляются за победы в турнирах и бои, в которых ты зарабатываешь без учёта премиум аккаунта, бустеров и бонусов х2–х5 меньше:
+                                                    </p>
+                                                    <ul>
+                                                        <li><span class="currency currency__combat_xp">200</span> на технике IV уровня;</li>
+                                                        <li><span class="currency currency__combat_xp">250</span> на технике V уровня;</li>
+                                                        <li><span class="currency currency__combat_xp">300</span> на технике VI уровня;</li>
+                                                        <li><span class="currency currency__combat_xp">350</span> на технике VII уровня;</li>
+                                                        <li><span class="currency currency__combat_xp">400</span> на технике VIII уровня;</li>
+                                                        <li><span class="currency currency__combat_xp">450</span> на технике IX уровня;</li>
+                                                        <li><span class="currency currency__combat_xp">500</span> на технике X уровня.</li>
+                                                    </ul>
+                                                </div>
+                                            </details>
+
+                                            <details>
+                                                <summary>Характеристики и компенсация</summary>
+                                                <div>
+                                                    <p>
+                                                        <span class="tanks-info tanks-info__collection">
+                                                            <span class="tanks-info_flag tanks-info_flag__usa"></span>
+                                                            <span class="tanks-info_type tanks-info_type__lighttank"></span>
+                                                            <span class="tanks-info_level">X</span>
+                                                            XM551 Sheridan Ракетный
+                                                        </span>
+                                                        — особый коллекционный танк с ракетным вооружением. От этого шустрого бойца тяжело скрыться, а догнать его и поймать в прицел — ещё тяжелее. Есть у него и ещё одна особенность: выйти на Sheridan Ракетном в бой можно только в фановых режимах и тренировочных комнатах. Выкручивай веселье на максимум!
+                                                    </p>
+                                                    <div>
+                                                        <p style="text-align: center;">
+                                                            <img src="https://media-wbp.wgcdn.co/media/filer_public/images/Sheridan_Missile_stats_RU.jpg">
+                                                        </p>
+                                                        <p style="text-align: center;">
+                                                            <img src="https://media-wbp.wgcdn.co/media/filer_public/images/Explorer_stats_RU.jpg">
+                                                        </p>
+                                                        <p style="text-align: center;">
+                                                            <img src="https://media-wbp.wgcdn.co/media/filer_public/images/Pz.IV_S._stats.jpg">
+                                                        </p>
+                                                        <p>Компенсация при наличии техники: Sheridan Ракетный —
+                                                            <span class="currency currency__gold">551</span>, Эксплорер —
+                                                            <span class="currency currency__gold">1750</span>, Pz. IV S. —
+                                                            <span class="currency currency__gold">1750</span>.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </details>
+
+                                            <details>
+                                                <summary>А что я могу достать из
+                                                    <span style="white-space: nowrap;">
+                                                        <img src="https://previews.dropbox.com/p/thumb/ADD2Nk5DWnxJshyPx18U0U6ZHd2__ObbrSkMmQrzMIAiyRcJPjujU7hYLev8e0UVmqrqQlIxmhBnkGt087AYf9HQ1JTo597esoEF88x1PFilUkg6yiOFU55OVFXOXo9D4bZSwLYaD2Ne0VYIBmNfEAH5idVUW9SLfVh-z6m48gFm4nSOweGhoVJsUiKL87KPrNZD5gj9PFkwvZObaP7iDlmswHi267uCrUs92pRKI4LwKVfhW74anUszJEKkGBi4gvhNR7jO6SDaGC4zuQg9lHPq60YwoQQmgoXdzBsqTGcfQNrukGTstlC_mAeb2tQ1EQ7Epf7SXIT0C9IE2Ddeh7kr/p.png?is_prewarmed=true" style="float: none; width: 25px; vertical-align: middle;"> Мощного
+                                                    </span>
+                                                    контейнера?
+                                                </summary>
+                                                <div>
+                                                    <p>Он гарантированно содержит кредиты,
+                                                        <span style="white-space: nowrap;">
+                                                            <img src="//media-wbp.wgcdn.co/media/filer_public/images/all-xp-boosters-icon.png" style="float: none; width: 25px; vertical-align: middle;"> бустеры
+                                                        </span>
+                                                        и
+                                                        <span style="white-space: nowrap;">
+                                                            <img src="//media-wbp.wgcdn.co/media/filer_public/images/certificate-battle-xp-item.png" style="float: none; width: 25px; vertical-align: middle;"> сертификаты
+                                                        </span>
+                                                        «х5 опыта», а также камуфляж или обвес из списка:
+                                                    </p>
+                                                    <ul>
+                                                        <li>редкий камуфляж «Ракетный арсенал»;</li>
+                                                        <li>редкий камуфляж «Ракетный залп»;</li>
+                                                        <li>обвес «Огнегарпун»;</li>
+                                                        <li>обвес «Снежная пушка»;</li>
+                                                        <li>обвес «Теслаган».</li>
+                                                    </ul>
+                                                    <p style="text-align: center;">
+                                                        <img src="https://media-wbp.wgcdn.co/media/filer_public/images/Mighty_Haul_2024.jpg">
+                                                    </p>
+                                                    <blockquote class="message-block">
+                                                        Открыть
+                                                        <span style="white-space: nowrap;">
+                                                            <img src="https://previews.dropbox.com/p/thumb/ADD2Nk5DWnxJshyPx18U0U6ZHd2__ObbrSkMmQrzMIAiyRcJPjujU7hYLev8e0UVmqrqQlIxmhBnkGt087AYf9HQ1JTo597esoEF88x1PFilUkg6yiOFU55OVFXOXo9D4bZSwLYaD2Ne0VYIBmNfEAH5idVUW9SLfVh-z6m48gFm4nSOweGhoVJsUiKL87KPrNZD5gj9PFkwvZObaP7iDlmswHi267uCrUs92pRKI4LwKVfhW74anUszJEKkGBi4gvhNR7jO6SDaGC4zuQg9lHPq60YwoQQmgoXdzBsqTGcfQNrukGTstlC_mAeb2tQ1EQ7Epf7SXIT0C9IE2Ddeh7kr/p.png?is_prewarmed=true" style="float: none; width: 25px; vertical-align: middle;"> контейнер
+                                                        </span>
+                                                        «Мощный» можно 10 раз.
+                                                    </blockquote>
+                                                </div>
+                                            </details>
+
+                                            <details>
+                                                <summary>Когда проходит событие «Цель: Sheridan Ракетный»?</summary>
+                                                <div>
+                                                    <ul>
+                                                        <li>Европа: с 19 июля 14:00 (CEST) по 29 июля 14:00 (CEST).</li>
+                                                        <li>Северная Америка: с 19 июля 6:00 (PT), 9:00 (ET) по 29 июля 6:00 (PT), 9:00 (ET).</li>
+                                                        <li>Азия: с 19 июля 14:00 (UTC+8) по 29 июля 14:00 (UTC+8).</li>
+                                                    </ul>
+                                                </div>
+                                            </details>
+
+                                            <details>
+                                                <summary>Что станет с моими
+                                                    <span style="white-space: nowrap;">
+                                                        <img src="https://previews.dropbox.com/p/thumb/ADAKAS9EF7kXyQuai3-1CYQp3Jw_pNIr1vCGCrC9GBEUgYcjVRPA2J0RVtPzy9fgkQ1Q4SxWRYJaSzcbmIQR8UXBviPMyB3oYM3Dkw86yKYCEqB_SDCS91EB-94-9KnJ7RxiHNPcX_ouxcoHSNazzzknKqXw-FqaeAKL2GpBMmvEtcOTGU-2372G3HBv9qafx1-6J-tJV4l1tdN0C_IbpUz0eJip4QPiysR5RP-ssyXhXjrf1lqZwUoNwhc_lmrdECzmzkpbpgQxPGQ7fkWArn5a8SqMmngSDuYrSuFiPpaROQNgllw3efXXdB209q2mEtej_gK4bOkq8j4j9N8_0Ud9/p.png?is_prewarmed=true" style="float: none; width: 25px; vertical-align: middle;"> Ракетами
+                                                    </span>,
+                                                    когда событие закончится?
+                                                </summary>
+                                                <div>
+                                                    <p>Они будут списаны без компенсации.</p>
+                                                </div>
+                                            </details>
+
+                                            <details>
+                                                <summary>Почему я не могу выйти в бой на Sheridan Ракетном?</summary>
+                                                <div>
+                                                    <p>Sheridan Ракетный недоступен для обычных, рейтинговых и турнирных боёв, а также в режиме «Столкновение». Сражаться на этом танке можно в тренировочных комнатах и различных «фановых» режимах: «Возрождении», «Гравитации», Mad Games и других.</p>
+                                                </div>
+                                            </details>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="related news_related"></div>
+                        </article>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <footer class="footer">
+            <div class="social">
+                <div class="social_content">
+                    <a href="https://discord.gg/YhCN6VK2KD" target="_blank" class="social_item">
+                        <span class="social_ico social_ico__discord"></span>
+                        <p class="social_text">Discord</p>
+                    </a>
+                    <a href="https://t.me/projectwotblitz" target="_blank" class="social_item">
+                        <p class="social_text">Telegram</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <div class="footer-menu_content">
+                    <div class="footer-menu_part">
+                        <span class="footer-menu_logo"></span>
+                    </div>
+                    <div class="footer-menu_part">
+                        <div class="footer-menu_item">
+                            <a id="cookie-settings-button" class="footer-menu_link"><span>Cookie settings</span></a>
+                        </div>
+                        <div class="footer-menu_item">
+                            <a href="https://legal.eu.wargaming.net/en/eula/" target="_blank" class="footer-menu_link">Лицензионное соглашение</a>
+                        </div>
+                        <div class="footer-menu_item">
+                            <a href="https://legal.eu.wargaming.net/en/terms-of-service/" target="_blank" class="footer-menu_link">Условия использования</a>
+                        </div>
+                        <div class="footer-menu_item">
+                            <a href="https://legal.eu.wargaming.net/en/privacy-policy/" target="_blank" class="footer-menu_link">Политика конфиденциальности</a>
+                        </div>
+                        <div class="footer-menu_item">
+                            <a href="/content/docs/system-requirements/" target="_blank" class="footer-menu_link">Системные требования</a>
+                        </div>
+                        <div class="footer-menu_item">
+                            <a href="https://eu.wargaming.net/support/en/products/wgc/help/36122/" target="_blank" class="footer-menu_link">Сообщить о контенте / Запросить данные</a>
+                        </div>
+                    </div>
+                    <div class="footer-menu_part">
+                        <button class="language-switch">
+                            <div class="language-switch_icon language-switch_icon__eu"></div>
+                            Россия (Русский)
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright"><span>© 2024–2026 by nirtothunder. Powered by Unity™ ©</span></p>
+            <div class="ratings">
+                <a href="https://www.usk.de/en/" target="_blank" class="ratings_link ratings_link__usk"></a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        (function() {
+            function parseDateTimeFromString(str) {
+                var parts = str.trim().split(' ');
+                var datePart = parts[0];
+                var timePart = parts[1] || '00:00';
+
+                var dateParts = datePart.split('.');
+                if (dateParts.length !== 3) return null;
+
+                var day = parseInt(dateParts[0], 10);
+                var month = parseInt(dateParts[1], 10) - 1;
+                var yearShort = parseInt(dateParts[2], 10);
+                var fullYear = 2000 + yearShort;
+
+                var timeParts = timePart.split(':');
+                var hours = parseInt(timeParts[0], 10) || 0;
+                var minutes = parseInt(timeParts[1], 10) || 0;
+
+                return new Date(fullYear, month, day, hours, minutes);
+            }
+
+            function getRelativeTimeString(date) {
+                var now = new Date();
+                var diffMs = now - date;
+
+                if (diffMs < 0) return "только что";
+
+                var diffSeconds = Math.floor(diffMs / 1000);
+                var diffMinutes = Math.floor(diffSeconds / 60);
+                var diffHours = Math.floor(diffMinutes / 60);
+                var diffDays = Math.floor(diffHours / 24);
+                var diffMonths = Math.floor(diffDays / 30);
+                var diffYears = Math.floor(diffDays / 365);
+
+                if (diffYears >= 1) {
+                    return diffYears === 1 ? '1 год назад' : diffYears + ' лет назад';
+                }
+                if (diffMonths >= 1) {
+                    return diffMonths === 1 ? '1 месяц назад' : diffMonths + ' месяцев назад';
+                }
+                if (diffDays >= 1) {
+                    return diffDays === 1 ? '1 день назад' : diffDays + ' дней назад';
+                }
+                if (diffHours >= 1) {
+                    return diffHours === 1 ? '1 час назад' : diffHours + ' часов назад';
+                }
+                if (diffMinutes >= 1) {
+                    return diffMinutes === 1 ? '1 минуту назад' : diffMinutes + ' минут назад';
+                }
+                return 'только что';
+            }
+
+            var timeSpan = document.getElementById('dynamic-time');
+            if (timeSpan) {
+                var originalStr = timeSpan.getAttribute('data-original-date');
+                if (originalStr) {
+                    var parsedDate = parseDateTimeFromString(originalStr);
+                    if (parsedDate && !isNaN(parsedDate.getTime())) {
+                        timeSpan.innerText = getRelativeTimeString(parsedDate);
+                    } else {
+                        timeSpan.innerText = originalStr;
+                    }
+                }
+            }
+        })();
+    </script>
+</body>
+</html>
